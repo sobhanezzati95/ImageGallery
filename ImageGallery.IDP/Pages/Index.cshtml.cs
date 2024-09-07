@@ -2,11 +2,11 @@
 // See LICENSE in the project root for license information.
 
 using Duende.IdentityServer;
-using System.Reflection;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Reflection;
 
-namespace IdentityServerHost.Pages.Home;
+namespace ImageGallery.IDP.Pages;
 
 [AllowAnonymous]
 public class Index : PageModel

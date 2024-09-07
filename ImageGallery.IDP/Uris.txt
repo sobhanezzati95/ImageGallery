@@ -1,0 +1,8 @@
+﻿Api :
+      "applicationUrl": "http://localhost:7287",
+
+Client :
+      "applicationUrl": "http://localhost:7101",
+
+Idp :
+      "applicationUrl": "http://localhost:7144",

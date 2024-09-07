@@ -2,10 +2,11 @@
 // See LICENSE in the project root for license information.
 
 using Duende.IdentityServer.Services;
+using IdentityServerHost.Pages;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace IdentityServerHost.Pages.Error;
+namespace ImageGallery.IDP.Pages.Home.Error;
 
 [AllowAnonymous]
 [SecurityHeaders]
@@ -13,15 +14,15 @@ public class Index : PageModel
 {
     private readonly IIdentityServerInteractionService _interaction;
     private readonly IWebHostEnvironment _environment;
-        
+
     public ViewModel View { get; set; } = new();
-        
+
     public Index(IIdentityServerInteractionService interaction, IWebHostEnvironment environment)
     {
         _interaction = interaction;
         _environment = environment;
     }
-        
+
     public async Task OnGet(string? errorId)
     {
         // retrieve error details from identityserver

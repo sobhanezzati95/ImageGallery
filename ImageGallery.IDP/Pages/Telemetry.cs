@@ -3,7 +3,7 @@
 
 using System.Diagnostics.Metrics;
 
-namespace IdentityServerHost.Pages;
+namespace ImageGallery.IDP.Pages;
 
 #pragma warning disable CA1034 // Nested types should not be visible
 #pragma warning disable CA1724 // Type names should not match namespaces
@@ -14,7 +14,7 @@ namespace IdentityServerHost.Pages;
 public static class Telemetry
 {
     private static readonly string ServiceVersion = typeof(Telemetry).Assembly.GetName().Version!.ToString();
-    
+
     /// <summary>
     /// Service name for telemetry.
     /// </summary>
