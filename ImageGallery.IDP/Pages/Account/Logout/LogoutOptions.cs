@@ -6,5 +6,5 @@ namespace ImageGallery.IDP.Pages.Account.Logout;
 public static class LogoutOptions
 {
     public static readonly bool ShowLogoutPrompt = true;
-    public static readonly bool AutomaticRedirectAfterSignOut = false;
+    public static readonly bool AutomaticRedirectAfterSignOut = true;
 }
